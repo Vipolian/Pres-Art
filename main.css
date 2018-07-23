@@ -1,0 +1,98 @@
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+
+.banner {
+    font-size: 10vh;
+    text-align: center;
+    color: white;
+    padding-top: 40vh;
+    width: auto;
+    height: 99vh;
+}
+
+.hallo {
+    font-size: 8vh;
+    text-align: center;
+    padding-top: 25vh;
+    width: auto;
+    height: 70vh;
+    background-color: lightblue;
+}
+
+.parall1 {
+    width: auto;
+    height: 27vh;
+}
+
+.about {
+
+    padding-top: 4vh;
+    width: auto;
+    height: 70vh;
+    background-color: lavender;
+}
+
+.about p {
+    text-align: center;
+    font-size: 7vh;
+    margin-bottom: 3vh;
+}
+
+.parall2 {
+    width: auto;
+    height: 27vh;
+}
+
+.contact {
+    font-size: 8vh;
+    text-align: center;
+    padding-top: 25vh;
+    width: auto;
+    height: 80vh;
+    background-color: azure;
+}
+
+.footer {
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 2vh;
+    color: white;
+    height: 15vh;
+    background-color: black;
+}
+
+.carousel-inner h3 {
+    background-color: rgba(20, 49, 68, 0.6);
+    padding: 20px;
+    animation: anime-H3 1.3s ease-out;
+}
+.carousel-inner p {
+    font-size: 18px;
+    background-color: rgba(30,29,29, 0.6);
+    padding: 20px;
+    animation: anime-P 1.6s ease-out;
+}
+
+@keyframes anime-H3 {
+    from {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes anime-P {
+    from {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
