@@ -1,0 +1,38 @@
+{
+  "name": "prezart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack-dev": "./node_modules/.bin/webpack --watch --config webpack.config.js",
+    "build": "webpack",
+    "start": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vipolian/PrezArt.git"
+  },
+  "author": "Vipolian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vipolian/PrezArt/issues"
+  },
+  "homepage": "https://github.com/Vipolian/PrezArt#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {}
+}

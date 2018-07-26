@@ -1,29 +1,31 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PRESART</title>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="main.css">
-    <link rel='stylesheet' href="slider.css">
+    <link rel="stylesheet" href="../src/sass/main.css">
+    <link rel='stylesheet' href="../src/sass/slider.css">
+    <link rel='stylesheet' href='dist/style.css'>
 </head>
+
 <body>
 
     <div class="header">
         <div class="logo">PresArt</div>
         <div class="links">
-        <ul>
-            <li><a href="#abt">о нас</a></li>
-            <li><a href="#wrk">работы</a></li>
-            <li><a href="#zkz">заказ</a></li>
-        </ul>
+            <ul>
+                <li><a href="#abt">о нас</a></li>
+                <li><a href="#wrk">работы</a></li>
+                <li><a href="#zkz">заказ</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="parallax banner" data-parallax="scroll" data-image-src="images/par-1.jpg">
-        <img src="images/logo.png" height="350px">
+    <div class="parallax banner" data-parallax="scroll" data-image-src="../src/images/par-1.jpg">
+        <img src="../src/images/logo.png" height="350px">
         <p>PRES<br>ART</p>
     </div>
 
@@ -40,11 +42,11 @@
                     <h3>Презентации для чтения и выступлений</h3>
                     <p>Пригодятся для онлайн-продаж, рассылок, встреч с клиентами и партнерами, отчетов и выступлений на конференциях</p>
                     </div>
-                    <img src="images/product.png">
+                    <img src="../src/images/product.png">
 
                 </li>
                 <li class="right">
-                    <img src="images/product.png">
+                    <img src="../src/images/product.png">
                     <div>
                     <h3>Корпоративные шаблоны</h3>
                     <p>Сэкономят время на создании рутинных и отчетных презентаций; не требуют от сотрудиков навыков дизайна и верстки</p>
@@ -55,10 +57,10 @@
                     <h3>Питчи для инвесторов</h3>
                     <p>Цель питча — заинтересовать инвестора и привлечь финансирование. Подготавливается максимально конкретизированная и сжатая презентация</p>
                     </div>
-                    <img src="images/product.png">
+                    <img src="../src/images/product.png">
                 </li>
                 <li class="right">
-                    <img src="images/product.png">
+                    <img src="../src/images/product.png">
                     <div>
                     <h3>Аутсорс всех презентационных задач</h3>
                     <p>Возьмем на себя подготовку всех презентационных и печатных материалов. Вы ставите задачи, мы выполняем их день в день</p>
@@ -69,7 +71,7 @@
     </div>
 
 
-    <div class="parallax parall1" data-parallax="scroll" data-image-src="images/par-3.jpg"></div>
+    <div class="parallax parall1" data-parallax="scroll" data-image-src="../src/images/par-3.jpg"></div>
 
     <div class="about" id="wrk">
         <p>РАБОТЫ</p>
@@ -91,7 +93,7 @@
         </div>
     </div>
 
-    <div class="parallax parall2" data-parallax="scroll" data-image-src="images/par-2.jpg">
+    <div class="parallax parall2" data-parallax="scroll" data-image-src="../src/images/par-2.jpg">
 
     </div>
 
@@ -121,9 +123,10 @@
 
 
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/slider.js"></script>
+    <!--<script src="js/parallax.min.js"></script>-->
+    <!--<script src="js/scroll.js"></script>-->
+    <!--<script src="js/slider.js"></script>-->
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 
 </body>
 </html>
