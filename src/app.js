@@ -1,4 +1,5 @@
 import './js/parallax.min'
 import './js/scroll'
 import './js/slider'
+import './js/fm.revealator.jquery'
 import './sass/main.sass'

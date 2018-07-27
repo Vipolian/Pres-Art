@@ -8,16 +8,18 @@
     <title>PRESART</title>
     <link rel="stylesheet" href="../src/sass/main.css">
     <link rel='stylesheet' href="../src/sass/slider.css">
+    <link rel='stylesheet' href="../src/sass/fm.revealator.jquery.css">
     <link rel='stylesheet' href='dist/style.css'>
 </head>
 
 <body>
 
+    <div class="app">
     <div class="header">
         <div class="logo">PresArt</div>
         <div class="links">
             <ul>
-                <li><a href="#abt">о нас</a></li>
+                <li><a href="#abt">о компании</a></li>
                 <li><a href="#wrk">работы</a></li>
                 <li><a href="#zkz">заказ</a></li>
             </ul>
@@ -25,47 +27,47 @@
     </div>
 
     <div class="parallax banner" data-parallax="scroll" data-image-src="../src/images/par-1.jpg">
-        <img src="../src/images/logo.png" height="350px">
-        <p>PRES<br>ART</p>
+            <img class="revealator-slidedown revealator-once revealator-duration15" src="../src/images/logo.png" height="40%">
+            <p class="revealator-slidedown revealator-once revealator-duration15">PRES<br>ART</p>
+            <p class="arrow revealator-slidedown revealator-once revealator-duration15">↓</p>
     </div>
 
     <div class="hallo" id="abt">
-        <h1>Визуальные решения ваших бизнес задач</h1>
-            <p>Презентация продукта, публичное выступление, совещание?
-            Мы разложим вашу информацию на составляющие, проанализируем,  а затем представим в виде презентации или инфографики.
+        <h1>Визуальные решения <br> ваших бизнес задач</h1>
+            <p class="revealator-slideup revealator-once revealator-duration13">Презентация продукта, публичное выступление, совещание?<br>
+            Мы разложим вашу информацию на составляющие, проанализируем, <br>а затем представим в виде презентации или инфографики.
             ​</p>
-        <button>Заказать решение</button>
-        <div class="prod">
+        <button class="revealator-slideup revealator-once revealator-duration13">Заказать решение</button>
+        <div class="products">
             <ul>
-                <li class="left">
-                    <div>
+                <li>
+                    <div class="prod revealator-slideright revealator-duration13 revealator-once">
                     <h3>Презентации для чтения и выступлений</h3>
-                    <p>Пригодятся для онлайн-продаж, рассылок, встреч с клиентами и партнерами, отчетов и выступлений на конференциях</p>
+                    <p>Пригодятся для онлайн-продаж, рассылок, встреч с клиентами и партнерами<br> отчетов и выступлений на конференциях</p>
                     </div>
-                    <img src="../src/images/product.png">
+
 
                 </li>
-                <li class="right">
-                    <img src="../src/images/product.png">
-                    <div>
+                <li>
+
+                    <div class="prod revealator-slideleft revealator-duration13 revealator-once">
                     <h3>Корпоративные шаблоны</h3>
-                    <p>Сэкономят время на создании рутинных и отчетных презентаций; не требуют от сотрудиков навыков дизайна и верстки</p>
+                    <p>Сэкономят время на создании рутинных и отчетных презентаций<br> не требуют от сотрудиков навыков дизайна и верстки</p>
                     </div>
                 </li>
-                <li class="left">
-                    <div>
+                <li>
+                    <div class="prod revealator-slideright revealator-duration13 revealator-once">
                     <h3>Питчи для инвесторов</h3>
-                    <p>Цель питча — заинтересовать инвестора и привлечь финансирование. Подготавливается максимально конкретизированная и сжатая презентация</p>
+                    <p>Цель питча — заинтересовать инвестора и привлечь финансирование<br> Подготавливается максимально конкретизированная и сжатая презентация</p>
                     </div>
-                    <img src="../src/images/product.png">
+
                 </li>
-                <li class="right">
-                    <img src="../src/images/product.png">
-                    <div>
-                    <h3>Аутсорс всех презентационных задач</h3>
-                    <p>Возьмем на себя подготовку всех презентационных и печатных материалов. Вы ставите задачи, мы выполняем их день в день</p>
-                    </div>
-                </li>
+                <!--<li>-->
+                    <!--<div class="prod">-->
+                    <!--<h3>Аутсорс всех презентационных задач</h3>-->
+                    <!--<p>Возьмем на себя подготовку всех презентационных и печатных материалов. Вы ставите задачи, мы выполняем их день в день</p>-->
+                    <!--</div>-->
+                <!--</li>-->
             </ul>
         </div>
     </div>
@@ -76,21 +78,21 @@
     <div class="about" id="wrk">
         <p>РАБОТЫ</p>
 
-        <div id="slider">
-            <a href="#" class="control_next">>></a>
-            <a href="#" class="control_prev"><</a>
-            <ul>
-                <li>SLIDE 1</li>
-                <li style="background: #aaa;">SLIDE 2</li>
-                <li>SLIDE 3</li>
-                <li style="background: #aaa;">SLIDE 4</li>
-            </ul>
-        </div>
+        <!--<div id="slider">-->
+            <!--<a href="#" class="control_next">>></a>-->
+            <!--<a href="#" class="control_prev"><</a>-->
+            <!--<ul>-->
+                <!--<li>SLIDE 1</li>-->
+                <!--<li style="background: #aaa;">SLIDE 2</li>-->
+                <!--<li>SLIDE 3</li>-->
+                <!--<li style="background: #aaa;">SLIDE 4</li>-->
+            <!--</ul>-->
+        <!--</div>-->
 
-        <div class="slider_option">
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox">Autoplay Slider</label>
-        </div>
+        <!--<div class="slider_option">-->
+            <!--<input type="checkbox" id="checkbox">-->
+            <!--<label for="checkbox">Autoplay Slider</label>-->
+        <!--</div>-->
     </div>
 
     <div class="parallax parall2" data-parallax="scroll" data-image-src="../src/images/par-2.jpg">
@@ -98,9 +100,7 @@
     </div>
 
     <div class="contact" id="zkz">
-        <p>Пожалуйста, заполните форму, и мы проконсультируем Вас,
-            а также пришлем бриф на разработку визуального решения
-        </p>
+        <p class="revealator-slidedown revealator-once revealator-duration15">Получить бриф на разработку</p>
         <form class="post">
             <input type="text" placeholder="Имя">
             <input type="text" placeholder="Email">
@@ -117,6 +117,8 @@
             <li>Москва</li>
         </ul>
         <p>PresArt ©   2018</p>
+    </div>
+
     </div>
 
 

@@ -1,10 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
 body {
+    overflow-x: hidden !important;
     margin: 0;
     padding: 0;
     font-family:"Open Sans", Arial, Verdana;
     font-weight: bold;
+}
+
+.app {
+    overflow-x: hidden !important;
 }
 
 .header {
@@ -14,7 +19,7 @@ body {
     top: 0;
     color: white;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +29,7 @@ body {
 .logo {
     display: flex;
     padding-left: 3vw;
-    font-size: 2.5vh;
+    font-size: 1.6rem;
 }
 
 .header ul {
@@ -49,51 +54,78 @@ a {
 
 
 .banner {
-    font-size: 10vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 5rem;
     text-align: center;
     color: white;
-    padding-top: 30vh;
-    /*width: auto;*/
-    height: 80vh;
+    width: auto;
+    height: 99vh;
 }
 
 .banner p {
     margin: 0;
 }
 
+.arrow {
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    color: #2a2a2a;
+    font-size: 3rem;
+    background-color: white;
+    margin-bottom: 0;
+}
+
 
 .hallo {
-    font-size: 2vh;
+    font-size: 1.5rem;
     text-align: center;
     width: auto;
     height: auto;
     background-color: white;
     font-weight: bold;
-    padding: 3vh 13vw 5vh;
+    padding: 5vh 3vw;
+}
+
+.hallo p {
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7vh;
+    max-width: 85vw;
+    text-align: center;
 }
 
 .hallo ul {
+    padding: 0;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: auto;
+    align-content: center;
+    align-items: center;
+}
+
+.hallo h1 {
+    color: blueviolet;
 }
 
 .hallo li {
     width: auto;
     margin-top: 5vh;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
 
-.right {
-    /*margin-right: 13vw;*/
-}
 
-.left {
-
-    /*margin-left: 12vw;*/
+.prod {
+    max-width: 70vw;
 }
 
 
@@ -112,7 +144,7 @@ a {
 
 .about p {
     text-align: center;
-    font-size: 7vh;
+    font-size: 4rem;
     margin-bottom: 3vh;
 }
 
@@ -124,7 +156,7 @@ a {
 .contact {
     padding-top: 5vh;
     text-align: center;
-    font-size: 3vh;
+    font-size: 2.5rem;
     width: auto;
     height: auto;
     background-color: mediumpurple;
@@ -143,10 +175,8 @@ a {
  button {
      outline: none;
      border-width: 0;
-     margin-top: 2vh;
     background-color: darkslateblue;
     border-radius: 20px;
-    /*height: 3vw;*/
     font-weight: bolder;
     font-size: 1.3rem;
     color: lavender;
@@ -160,17 +190,22 @@ a {
  }
 
  input {
-     height: 3.5vh;
-     border-radius: 19px;
+     min-height: 29px;
+     outline: none;
+     height: 3.9vh;
+     border-radius: 12px;
      border-width: 0;
-     padding-left: 1vw;
-     margin-bottom: 2vh;
+     padding-left: 15px;
+     margin-bottom: 1.5vh;
+     font-size: 1rem;
  }
 
  .discr {
+     outline: none;
+     border-width: 0;
      height: 15vh;
-     border-radius: 18px;
-     padding-left: 1vw;
+     border-radius: 12px;
+     padding-left: 15px;
      padding-top: 1vh;
      font-size: 1rem;
  }
@@ -182,6 +217,7 @@ a {
  }
 
  .footer ul {
+     padding: 0;
      list-style-type: none;
      display: flex;
      justify-content: center;
@@ -193,10 +229,12 @@ a {
  }
 
  .post {
+
+     min-width: 250px;
      display: flex;
      justify-content: center;
      flex-direction: column;
-     width: 26vh;
+     width: 35vw;
      margin-right: auto;
      margin-left: auto;
      padding-top: 5vh;
@@ -205,5 +243,5 @@ a {
 
  .contact p {
      margin: auto;
-     width: 60vw;
+     width: 70vw;
  }
