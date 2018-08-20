@@ -26,9 +26,7 @@ module.exports = {
         ]
     },
     plugins: [
-        // new ExtractTextPlugin(
-        //   {filename: 'style.[hash].css', disable: false, allChunks: true }
-        // ),
+       
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css',
         }),
